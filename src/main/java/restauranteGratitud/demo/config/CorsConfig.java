@@ -13,8 +13,10 @@ import org.springframework.context.annotation.Configuration;
  *
  * @author Usuario
  */
+@Configuration
 public class CorsConfig {
-      @Bean
+
+    @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
